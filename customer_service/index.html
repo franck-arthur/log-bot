@@ -27,25 +27,26 @@
         Telegram.WebApp.sendData(data);
         Telegram.WebApp.close();
     });
-
 </script>
-<body style="background-color: #ffffff">
+<body style="background-color: #ffffff; padding-top: 20px;">
 
-    <header>
+    <header class="mb-4">
         <nav>
-          <ul>
-            <li><a href="index.html" onclick="changeLanguage('fr')">Français</a></li>
-            <li><a href="index.html" onclick="changeLanguage('en')">English</a></li>
+          <ul class="nav justify-content-end">
+            <li class="nav-item"><a class="nav-link" href="index.html" onclick="changeLanguage('fr')">Français</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html" onclick="changeLanguage('en')">English</a></li>
           </ul>
         </nav>
     </header>
-    <main>
-        <div class="container-fluid">
-            <h2 data-i18n="title"></h2>
-            <p data-i18n="form_info"></p>
-            <div class="row g-3 mb-3">
-                <label data-i18n="object_label" for="object"></label>
-                <select id="object" name="object" class="form-control" data-i18n="object_label">
+
+    <main class="container">
+        <h2 class="text-center mb-4" data-i18n="title"></h2>
+        <p data-i18n="form_info" class="mb-4"></p>
+
+        <form>
+            <div class="mb-3">
+                <label for="object" class="form-label" data-i18n="object_label"></label>
+                <select id="object" name="object" class="form-select" data-i18n="object_label">
                     <optgroup data-i18n="distribution_label">
                         <option data-i18n="referent_label"></option>
                         <option data-i18n="spotify_ads_label"></option>
@@ -82,41 +83,36 @@
                 </select>
             </div>
 
-            <div class="row g-3 mb-3 align-items-center">
-                <div class="col-3">
-                <label for="nickname" data-i18n="nickname_label" class="col-form-label">Nom d'artiste :</label>
-                </div>
-                <div class="col-9">
-                <input type="text" id="nickname" class="form-control">
+            <div class="mb-3 row">
+                <label for="nickname" class="col-sm-3 col-form-label" data-i18n="nickname_label">Nom d'artiste :</label>
+                <div class="col-sm-9">
+                    <input type="text" id="nickname" class="form-control" placeholder="Entrez votre nom d'artiste">
                 </div>
             </div>
 
-            <div class="row g-3 mb-3 align-items-center">
-                <div class="col-3">
-                <label for="email" data-i18n="email_label" class="col-form-label">E-mail :</label>
-                </div>
-                <div class="col-9">
-                <input type="text" id="email" class="form-control">
+            <div class="mb-3 row">
+                <label for="email" class="col-sm-3 col-form-label" data-i18n="email_label">E-mail :</label>
+                <div class="col-sm-9">
+                    <input type="email" id="email" class="form-control" placeholder="Entrez votre e-mail">
                 </div>
             </div>
 
-            <div class="row g-3 mb-3 align-items-center">
-                <div class="col-3">
-                    <label for="phone" data-i18n="phone_label" class="col-form-label">Numéro de téléphone :</label>
-                </div>
-                <div class="col-9">
-                    <input type="text" id="phone" class="form-control">
+            <div class="mb-3 row">
+                <label for="phone" class="col-sm-3 col-form-label" data-i18n="phone_label">Numéro de téléphone :</label>
+                <div class="col-sm-9">
+                    <input type="tel" id="phone" class="form-control" placeholder="Entrez votre numéro de téléphone">
                 </div>
             </div>
-            <div class="row g-3 mb-3">
-                <label for="description" data-i18n="description_label" class="form-label"></label>
-                <textarea id="description" name="description" class="form-control"></textarea>
+
+            <div class="mb-3">
+                <label for="description" class="form-label" data-i18n="description_label">Description :</label>
+                <textarea id="description" name="description" class="form-control" placeholder="Ajoutez une description"></textarea>
             </div>
-        </div>
+        </form>
     </main>
 
-    <script type="text/javascript"  src="languages/en.js"></script>
-    <script type="text/javascript"  src="languages/fr.js"></script>
+    <script type="text/javascript" src="languages/en.js"></script>
+    <script type="text/javascript" src="languages/fr.js"></script>
     <script src="script.js"></script>
 </body>
 <script type="text/javascript">
