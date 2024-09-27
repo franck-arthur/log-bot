@@ -7,6 +7,7 @@
 5. Exécuter les commandes :
     - pip install python-telegram-bot : pour install le package telegram bot
     - pip install python-dotenv : pour récupérer les variables d'environnement
+    - pip install requests : pour faire les appels HTTP au webhook
 
 -- Démarrage de l'application python --
 
