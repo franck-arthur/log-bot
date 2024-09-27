@@ -1,0 +1,17 @@
+-- Installation de l'application python --
+
+1. Créer le bot sur telegram depuis le @BotFather et récupérer le token
+2. Remplacer le token, le webhook_url et la webapp_url dans le fichier .env
+3. Installer le module python : python -m venv .venv ou  python3 -m venv .venv (en fonction de la version de python)
+4. Activer l'environnement virtuel avec la commande : source .venv/bin/activate
+5. Exécuter les commandes :
+    - pip install python-telegram-bot : pour install le package telegram bot
+    - pip install python-dotenv : pour récupérer les variables d'environnement
+
+-- Démarrage de l'application python --
+
+1. Activer l'environnement virtuel avec la commande : source .venv/bin/activate
+2. Démarrer l'application pyton avec la commande : python3 main.py
+
+-- Arrêt de l'application python --
+Ctrl + C

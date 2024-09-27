@@ -1,0 +1,55 @@
+{
+    "categories" : [
+        {
+            "type": "Distribution",
+            "objets" : [
+                "Attribution référent L.O.G",
+                "Campagne Spotify Ads",
+                "Conception cover",
+                "Création chaine VEVO",
+                "Création compte TikTok",
+                "Gestion des lyrics",
+                "Redistribution (Changement de nom d'artiste / cover)",
+                "Traitement audio son",
+                "Vérification copyright (en cas de non validation)"
+            ]
+        },
+        {
+            "type": "Communication",
+            "objets" : [
+                "Certification comptes plateformes / réseaux (Spotify, Apple, Boomplay, Deezer)",
+                "Conception charte graphique pour artiste/label",
+                "Conception pressbook",
+                "Conception site internet artiste/label",
+                "Consulting strategie de communication",
+                "Création fanlink pre-release",
+                "Création fanlink release",
+                "Distribution express",
+                "Mise en avant  Boomplay / Stillac",
+                "Organisation média tour / réseaux sociaux",
+                "Publication sur nos pages"
+            ]
+        },
+        {
+            "type": "Vidéo",
+            "objets" : [
+                "Campagne TikTok Ads",
+                "Campagne YouTube Ads",
+                "Création compte YouTube officiel",
+                "Distribution VEVO"
+            ]
+        },
+        {
+            "type": "Contrat",
+            "objets" : []
+        },
+        {
+            "type": "Compte",
+            "objets" : []
+        },
+        {
+            "type": "Autres",
+            "objets" : []
+        }
+    ]
+}
